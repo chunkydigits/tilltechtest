@@ -8,9 +8,9 @@ using Till.Extensions;
 using Till.Repositories;
 using Xunit;
 
-namespace Till.Tests
+namespace Till.Tests.Repositories
 {
-    public class TillTests
+    public class TillRepositoryTests
     {
         private readonly DateTime _nowTimestamp = new DateTime(2018, 09, 15, 2, 21, 15);
         private readonly string _nonExistantItem = "hobnobs";
@@ -24,14 +24,16 @@ namespace Till.Tests
 
         private List<CheckoutItem> _basicTestSetAsCheckoutItems = new List<CheckoutItem>();
         private string[] _basicTestSetAsStringArray = new []{"milk", "bread", "beans", "apples"};
+        private decimal _basicTestSetBasketValueBeforeOffers;
         private string[] _emptyArray;
 
-        public TillTests()
+        public TillRepositoryTests()
         {
             _basicTestSetAsCheckoutItems.Add(_dbItems.First(o => o.Name == "milk"));
             _basicTestSetAsCheckoutItems.Add(_dbItems.First(o => o.Name == "bread"));
             _basicTestSetAsCheckoutItems.Add(_dbItems.First(o => o.Name == "beans"));
             _basicTestSetAsCheckoutItems.Add(_dbItems.First(o => o.Name == "apples"));
+            _basicTestSetBasketValueBeforeOffers = _basicTestSetAsCheckoutItems.Sum(o => o.Cost);
         }
 
         // Happy Path
@@ -74,11 +76,16 @@ namespace Till.Tests
             Assert.Equal(result.Errors.Count, actual: 0);
         }
 
-        [Fact]
-        public void When_a_list_of_shopping_items_are_passed_in_with_a_non_existant_item__Then_they_are_converted_to_checkout_items()
+        [Theory]
+        [InlineData(1)]
+        public void When_a_list_of_shopping_items_are_passed_in_with_a_non_existant_item__Then_they_are_converted_to_checkout_items_and_an_error_raised(int amountOfNonExistantItems)
         {
             // Arrange 
-            var testSetWithNonExistantItem = _basicTestSetAsStringArray.Add(_nonExistantItem);
+            var testSetWithNonExistantItem = _basicTestSetAsStringArray;
+            for (var i = 0; i < amountOfNonExistantItems; i++)
+            {
+                testSetWithNonExistantItem.Add(_nonExistantItem + " - " + i);
+            }
 
             var mockDb = new Mock<IDatabase>();
             mockDb.Setup(o => o.CheckoutItems).Returns(_dbItems);
@@ -93,11 +100,33 @@ namespace Till.Tests
 
             // Assert
             Assert.Equal(_basicTestSetAsCheckoutItems, result.CheckoutItems);
-            Assert.Equal(result.Errors.Count, actual: 1);
+            Assert.Equal(result.Errors.Count, actual: amountOfNonExistantItems);
 
-            var errorMessage = result.Errors.First();
-            Assert.Equal(errorMessage.Key, "Item not found in DB");
-            Assert.Equal(errorMessage.Value, _nonExistantItem);
+            for (var i = 0; i < result.Errors.Count(); i++)
+            {
+                var errorMessage = result.Errors.First(o => o.Value == _nonExistantItem + " - " + i);
+                Assert.Equal("Item not found in DB", errorMessage.Key);
+                Assert.Equal(_nonExistantItem + " - " + i, errorMessage.Value);
+            }
+        }
+
+        [Fact]
+        public void When_a_basket_is_submitted__The_total_is_correct_before_offers_applied()
+        {
+            // Arrange 
+            var mockDb = new Mock<IDatabase>();
+            mockDb.Setup(o => o.CheckoutItems).Returns(_dbItems);
+
+            var mockDateRepo = new Mock<IDateRepository>();
+            mockDateRepo.Setup(o => o.UtcNow()).Returns(_nowTimestamp);
+
+            var sut = new TillRepository(mockDb.Object, mockDateRepo.Object);
+
+            // Act 
+            var result = sut.ProcessCheckoutItems(_basicTestSetAsStringArray);
+
+            // Assert
+            Assert.Equal(_basicTestSetBasketValueBeforeOffers, result.Total);
         }
     }
 }

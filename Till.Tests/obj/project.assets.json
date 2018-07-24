@@ -1783,7 +1783,7 @@
           "bin/placeholder/Persistence.dll": {}
         }
       },
-      "Till/1.0.0": {
+      "PriceCalculator/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
@@ -1793,10 +1793,10 @@
           "Persistence": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Till.dll": {}
+          "bin/placeholder/PriceCalculator.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Till.dll": {}
+          "bin/placeholder/PriceCalculator.dll": {}
         }
       }
     }
@@ -6029,10 +6029,10 @@
       "path": "../Persistence/Persistence.csproj",
       "msbuildProject": "../Persistence/Persistence.csproj"
     },
-    "Till/1.0.0": {
+    "PriceCalculator/1.0.0": {
       "type": "project",
-      "path": "../Till/Till.csproj",
-      "msbuildProject": "../Till/Till.csproj"
+      "path": "../Till/PriceCalculator.csproj",
+      "msbuildProject": "../Till/PriceCalculator.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6040,29 +6040,29 @@
       "Microsoft.NET.Test.Sdk >= 15.7.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "Moq >= 4.9.0",
-      "Till >= 1.0.0",
+      "PriceCalculator >= 1.0.0",
       "xunit >= 2.3.1",
       "xunit.runner.visualstudio >= 2.3.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fw5733\\.nuget\\packages\\": {},
+    "C:\\Users\\Andy Brown\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sandbox\\test\\tilltechtest\\Till.Tests\\Till.Tests.csproj",
-      "projectName": "Till.Tests",
-      "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Till.Tests\\Till.Tests.csproj",
-      "packagesPath": "C:\\Users\\fw5733\\.nuget\\packages\\",
+      "projectUniqueName": "C:\\Sandbox\\test\\tilltechtest\\Till.Tests\\PriceCalculator.Tests.csproj",
+      "projectName": "PriceCalculator.Tests",
+      "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Till.Tests\\PriceCalculator.Tests.csproj",
+      "packagesPath": "C:\\Users\\Andy Brown\\.nuget\\packages\\",
       "outputPath": "C:\\Sandbox\\test\\tilltechtest\\Till.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\fw5733\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andy Brown\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6075,8 +6075,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Sandbox\\test\\tilltechtest\\Till\\Till.csproj": {
-              "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Till\\Till.csproj"
+            "C:\\Sandbox\\test\\tilltechtest\\Till\\PriceCalculator.csproj": {
+              "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Till\\PriceCalculator.csproj"
             }
           }
         }

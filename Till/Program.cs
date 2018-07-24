@@ -36,6 +36,7 @@ namespace Till
 
             if (offers != null)
                 _offerRepository.ApplyOffers(checkout);
+
             _printingService.OutputBasketValues(checkout);
             _printingService.OutputTotals(checkout);
 

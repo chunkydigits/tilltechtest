@@ -1,0 +1,16 @@
+C:\Sandbox\test\tilltechtest\Till\bin\Debug\netcoreapp2.1\PriceCalculator.deps.json
+C:\Sandbox\test\tilltechtest\Till\bin\Debug\netcoreapp2.1\PriceCalculator.runtimeconfig.json
+C:\Sandbox\test\tilltechtest\Till\bin\Debug\netcoreapp2.1\PriceCalculator.runtimeconfig.dev.json
+C:\Sandbox\test\tilltechtest\Till\bin\Debug\netcoreapp2.1\PriceCalculator.dll
+C:\Sandbox\test\tilltechtest\Till\bin\Debug\netcoreapp2.1\PriceCalculator.pdb
+C:\Sandbox\test\tilltechtest\Till\bin\Debug\netcoreapp2.1\Models.dll
+C:\Sandbox\test\tilltechtest\Till\bin\Debug\netcoreapp2.1\Persistence.dll
+C:\Sandbox\test\tilltechtest\Till\bin\Debug\netcoreapp2.1\Models.pdb
+C:\Sandbox\test\tilltechtest\Till\bin\Debug\netcoreapp2.1\Persistence.pdb
+C:\Sandbox\test\tilltechtest\Till\obj\Debug\netcoreapp2.1\PriceCalculator.csprojAssemblyReference.cache
+C:\Sandbox\test\tilltechtest\Till\obj\Debug\netcoreapp2.1\PriceCalculator.csproj.CoreCompileInputs.cache
+C:\Sandbox\test\tilltechtest\Till\obj\Debug\netcoreapp2.1\PriceCalculator.AssemblyInfoInputs.cache
+C:\Sandbox\test\tilltechtest\Till\obj\Debug\netcoreapp2.1\PriceCalculator.AssemblyInfo.cs
+C:\Sandbox\test\tilltechtest\Till\obj\Debug\netcoreapp2.1\PriceCalculator.csproj.CopyComplete
+C:\Sandbox\test\tilltechtest\Till\obj\Debug\netcoreapp2.1\PriceCalculator.dll
+C:\Sandbox\test\tilltechtest\Till\obj\Debug\netcoreapp2.1\PriceCalculator.pdb

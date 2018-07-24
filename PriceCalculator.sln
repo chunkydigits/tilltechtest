@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Till", "Till\Till.csproj", "{11FFF096-2CE2-4472-89AC-32247577E371}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PriceCalculator", "Till\PriceCalculator.csproj", "{11FFF096-2CE2-4472-89AC-32247577E371}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Till.Tests", "Till.Tests\Till.Tests.csproj", "{E1074197-FD74-4F7F-89BD-525415410886}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PriceCalculator.Tests", "Till.Tests\PriceCalculator.Tests.csproj", "{E1074197-FD74-4F7F-89BD-525415410886}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{FD70E55A-F48E-4749-9E50-9E424C7B5535}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{FD70E55A-F48E-4749-9E50-9E424C7B5535}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{58F13B98-4960-4A19-89FD-0EE0D9B43B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{58F13B98-4960-4A19-89FD-0EE0D9B43B62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Till\Till.csproj" />
+    <ProjectReference Include="..\Till\PriceCalculator.csproj" />
   </ItemGroup>
 
 </Project>

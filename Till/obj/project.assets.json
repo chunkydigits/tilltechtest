@@ -766,23 +766,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fw5733\\.nuget\\packages\\": {},
+    "C:\\Users\\Andy Brown\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sandbox\\test\\tilltechtest\\Till\\Till.csproj",
-      "projectName": "Till",
-      "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Till\\Till.csproj",
-      "packagesPath": "C:\\Users\\fw5733\\.nuget\\packages\\",
+      "projectUniqueName": "C:\\Sandbox\\test\\tilltechtest\\Till\\PriceCalculator.csproj",
+      "projectName": "PriceCalculator",
+      "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Till\\PriceCalculator.csproj",
+      "packagesPath": "C:\\Users\\Andy Brown\\.nuget\\packages\\",
       "outputPath": "C:\\Sandbox\\test\\tilltechtest\\Till\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\fw5733\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andy Brown\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

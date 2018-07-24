@@ -9,10 +9,6 @@ C:\Sandbox\test\tilltechtest\Till.Tests\bin\Debug\netcoreapp2.1\Till.Tests.deps.
 C:\Sandbox\test\tilltechtest\Till.Tests\bin\Debug\netcoreapp2.1\Till.Tests.runtimeconfig.json
 C:\Sandbox\test\tilltechtest\Till.Tests\bin\Debug\netcoreapp2.1\Till.Tests.runtimeconfig.dev.json
 C:\Sandbox\test\tilltechtest\Till.Tests\bin\Debug\netcoreapp2.1\Till.Tests.dll
-C:\Sandbox\test\tilltechtest\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.csprojAssemblyReference.cache
-C:\Sandbox\test\tilltechtest\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.csproj.CoreCompileInputs.cache
-C:\Sandbox\test\tilltechtest\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.AssemblyInfoInputs.cache
-C:\Sandbox\test\tilltechtest\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.AssemblyInfo.cs
 C:\Sandbox\test\tilltechtest\Till.Tests\bin\Debug\netcoreapp2.1\Till.Tests.pdb
 C:\Sandbox\test\tilltechtest\Till.Tests\bin\Debug\netcoreapp2.1\Models.dll
 C:\Sandbox\test\tilltechtest\Till.Tests\bin\Debug\netcoreapp2.1\Persistence.dll
@@ -20,6 +16,10 @@ C:\Sandbox\test\tilltechtest\Till.Tests\bin\Debug\netcoreapp2.1\Till.dll
 C:\Sandbox\test\tilltechtest\Till.Tests\bin\Debug\netcoreapp2.1\Till.pdb
 C:\Sandbox\test\tilltechtest\Till.Tests\bin\Debug\netcoreapp2.1\Models.pdb
 C:\Sandbox\test\tilltechtest\Till.Tests\bin\Debug\netcoreapp2.1\Persistence.pdb
+C:\Sandbox\test\tilltechtest\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.csprojAssemblyReference.cache
+C:\Sandbox\test\tilltechtest\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.csproj.CoreCompileInputs.cache
+C:\Sandbox\test\tilltechtest\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.AssemblyInfoInputs.cache
+C:\Sandbox\test\tilltechtest\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.AssemblyInfo.cs
 C:\Sandbox\test\tilltechtest\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.csproj.CopyComplete
 C:\Sandbox\test\tilltechtest\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.dll
 C:\Sandbox\test\tilltechtest\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.pdb

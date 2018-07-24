@@ -697,7 +697,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fw5733\\.nuget\\packages\\": {},
+    "C:\\Users\\Andy Brown\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -706,14 +706,14 @@
       "projectUniqueName": "C:\\Sandbox\\test\\tilltechtest\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
       "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Persistence\\Persistence.csproj",
-      "packagesPath": "C:\\Users\\fw5733\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Andy Brown\\.nuget\\packages\\",
       "outputPath": "C:\\Sandbox\\test\\tilltechtest\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\fw5733\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andy Brown\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
