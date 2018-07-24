@@ -70,5 +70,8 @@ namespace Till.Tests.Repositories
 
         [Fact]
         public void When_a_basket_is_submitted_with_trigger_items_that_meet_multibuy_offer_criteria__And_a_multibuy_offer_applies__Then_the_correct_multibuy_offer_is_applied() { }
+
+        [Fact]
+        public void When_a_basket_is_submitted_with_trigger_items_that_meets_an_out_of_date_offer__Then_the_offer_is_NOT_applied() { }
     }
 }

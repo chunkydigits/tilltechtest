@@ -78,13 +78,15 @@ namespace Till.Tests.Repositories
 
         [Theory]
         [InlineData(1)]
+        [InlineData(2)]
+        [InlineData(10)]
         public void When_a_list_of_shopping_items_are_passed_in_with_a_non_existant_item__Then_they_are_converted_to_checkout_items_and_an_error_raised(int amountOfNonExistantItems)
         {
             // Arrange 
             var testSetWithNonExistantItem = _basicTestSetAsStringArray;
             for (var i = 0; i < amountOfNonExistantItems; i++)
             {
-                testSetWithNonExistantItem.Add(_nonExistantItem + " - " + i);
+                testSetWithNonExistantItem  = testSetWithNonExistantItem.Add(_nonExistantItem + " - " + i);
             }
 
             var mockDb = new Mock<IDatabase>();

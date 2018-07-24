@@ -30,8 +30,10 @@ namespace Till.Services
             if (!checkout.Offers.Any(o => o.Applied))
                 Console.WriteLine(NO_OFFERS_TEXT);
             else
-                _offerRepository.OutputOfferText(checkout);
-            Console.WriteLine("Subtotal: " + checkout.Total.ToString("c2"));
+                Console.WriteLine(_offerRepository.OutputOfferText(checkout));
+
+            var finalTotal = checkout.Total - checkout.TotalDiscount;
+            Console.WriteLine("Grand Total: " + finalTotal.ToString("c2"));
         }
 
 

@@ -10,9 +10,10 @@ namespace Models
         public OfferType Type { get; set; }
         public List<string> MultibuyTriggerItems { get; set; }
         public decimal Amount { get; set; }
-        public Func<List<CheckoutItem>> Calculation { get; set; }
+        public Delegate Calculation { get; set; }
         public DateTime ValidFrom { get; set; }
         public DateTime ValidTo { get; set; }
         public bool Applied { get; set; }
+        public decimal Discount { get; set; }
     }
 }

@@ -20,9 +20,11 @@ namespace Till.Repositories
 
         public List<Offer> GetOffersToApply(Checkout checkout)
         {
-            return _database.Offers.Where(o => checkout.CheckoutItems.Select(p => p.Name).Contains(o.TriggerCheckoutItem.Name) 
+            var checkoutItemsStringList = checkout.CheckoutItems.Select(p => p.Name);
+            return _database.Offers.Where(o => checkout.CheckoutItems.Select(p => p.Name).Contains(o.TriggerCheckoutItem.Name)
                                                && o.ValidTo >= _dateRepository.UtcNow()
-                                               && o.ValidFrom <= _dateRepository.UtcNow()).ToList();
+                                               && o.ValidFrom <= _dateRepository.UtcNow())
+                                    .ToList();
         }
 
         public string OutputOfferText(Checkout checkout)
@@ -30,7 +32,8 @@ namespace Till.Repositories
             var returnMessage = new StringBuilder();
             foreach (var offer in checkout.Offers.Where(o => o.Applied))
             {
-                returnMessage.AppendLine(GetOfferSummaryTextWithSubTotal(offer));
+                if (offer.Discount > 0)
+                    returnMessage.AppendLine(GetOfferSummaryTextWithSubTotal(offer));
             }
 
             return returnMessage.ToString();
@@ -40,9 +43,8 @@ namespace Till.Repositories
         {
             foreach (var offer in checkout.Offers)
             {
-                // Want to execute a function here 
-                // does it need to be a delegate or function or what? 
-                // checkoutOffer.Calculation(checkout.CheckoutItems);
+                offer.Applied = true;
+                offer.Discount = (decimal)offer.Calculation.DynamicInvoke(checkout.CheckoutItems);
             }
             return checkout;
         }
@@ -57,14 +59,13 @@ namespace Till.Repositories
             switch (offer.Type)
             {
                 case OfferType.FixedAmountReduction:
-                    text += ("£" + offer.Amount);
+                    text += offer.Amount.ToString("c2");
                     break;
                 case OfferType.PercentageAmountReduction:
-                    //text += ("" + offer.Calculation);
-                    // Calculate this 
+                    text += offer.Discount.ToString("c2");
                     break;
                 case OfferType.MultibuyDeal:
-                    text += "Multibuy Offer";
+                    text += "Multibuy Offer (" + offer.Discount.ToString("c2") + ")";
                     break;
             }
 

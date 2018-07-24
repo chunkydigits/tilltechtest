@@ -16,6 +16,11 @@ namespace Models
             get { return CheckoutItems.Sum(o => o.Cost); }
         }
 
+        public decimal TotalDiscount
+        {
+            get { return Offers.Sum(o => o.Discount); }
+        }
+
         public List<KeyValuePair<string, string>> Errors { get; set; }
 
         public Checkout()
