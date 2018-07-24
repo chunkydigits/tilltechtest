@@ -1,0 +1,4 @@
+c:\Sandbox\test\Till\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.csprojAssemblyReference.cache
+c:\Sandbox\test\Till\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.csproj.CoreCompileInputs.cache
+c:\Sandbox\test\Till\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.AssemblyInfoInputs.cache
+c:\Sandbox\test\Till\Till.Tests\obj\Debug\netcoreapp2.1\Till.Tests.AssemblyInfo.cs

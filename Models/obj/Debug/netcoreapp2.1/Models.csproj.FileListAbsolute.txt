@@ -1,0 +1,9 @@
+c:\Sandbox\test\Till\Models\bin\Debug\netcoreapp2.1\Models.deps.json
+c:\Sandbox\test\Till\Models\bin\Debug\netcoreapp2.1\Models.dll
+c:\Sandbox\test\Till\Models\bin\Debug\netcoreapp2.1\Models.pdb
+c:\Sandbox\test\Till\Models\obj\Debug\netcoreapp2.1\Models.csprojAssemblyReference.cache
+c:\Sandbox\test\Till\Models\obj\Debug\netcoreapp2.1\Models.csproj.CoreCompileInputs.cache
+c:\Sandbox\test\Till\Models\obj\Debug\netcoreapp2.1\Models.AssemblyInfoInputs.cache
+c:\Sandbox\test\Till\Models\obj\Debug\netcoreapp2.1\Models.AssemblyInfo.cs
+c:\Sandbox\test\Till\Models\obj\Debug\netcoreapp2.1\Models.dll
+c:\Sandbox\test\Till\Models\obj\Debug\netcoreapp2.1\Models.pdb

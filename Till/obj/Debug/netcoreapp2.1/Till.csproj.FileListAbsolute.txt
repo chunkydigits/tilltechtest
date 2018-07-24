@@ -1,0 +1,16 @@
+c:\Sandbox\test\Till\Till\bin\Debug\netcoreapp2.1\Till.deps.json
+c:\Sandbox\test\Till\Till\bin\Debug\netcoreapp2.1\Till.runtimeconfig.json
+c:\Sandbox\test\Till\Till\bin\Debug\netcoreapp2.1\Till.runtimeconfig.dev.json
+c:\Sandbox\test\Till\Till\bin\Debug\netcoreapp2.1\Till.dll
+c:\Sandbox\test\Till\Till\bin\Debug\netcoreapp2.1\Till.pdb
+c:\Sandbox\test\Till\Till\obj\Debug\netcoreapp2.1\Till.csprojAssemblyReference.cache
+c:\Sandbox\test\Till\Till\obj\Debug\netcoreapp2.1\Till.csproj.CoreCompileInputs.cache
+c:\Sandbox\test\Till\Till\obj\Debug\netcoreapp2.1\Till.AssemblyInfoInputs.cache
+c:\Sandbox\test\Till\Till\obj\Debug\netcoreapp2.1\Till.AssemblyInfo.cs
+c:\Sandbox\test\Till\Till\obj\Debug\netcoreapp2.1\Till.dll
+c:\Sandbox\test\Till\Till\obj\Debug\netcoreapp2.1\Till.pdb
+c:\Sandbox\test\Till\Till\bin\Debug\netcoreapp2.1\Models.dll
+c:\Sandbox\test\Till\Till\bin\Debug\netcoreapp2.1\Models.pdb
+c:\Sandbox\test\Till\Till\obj\Debug\netcoreapp2.1\Till.csproj.CopyComplete
+c:\Sandbox\test\Till\Till\bin\Debug\netcoreapp2.1\Persistence.dll
+c:\Sandbox\test\Till\Till\bin\Debug\netcoreapp2.1\Persistence.pdb

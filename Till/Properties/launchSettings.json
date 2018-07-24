@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Till": {
+      "commandName": "Project",
+      "commandLineArgs": "apples beans bread"
+    }
+  }
+}
