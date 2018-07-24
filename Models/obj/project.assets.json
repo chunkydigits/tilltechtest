@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Sandbox\\test\\Till\\Models\\Models.csproj",
+      "projectUniqueName": "C:\\Sandbox\\test\\tilltechtest\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "c:\\Sandbox\\test\\Till\\Models\\Models.csproj",
+      "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\fw5733\\.nuget\\packages\\",
-      "outputPath": "c:\\Sandbox\\test\\Till\\Models\\obj\\",
+      "outputPath": "C:\\Sandbox\\test\\tilltechtest\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

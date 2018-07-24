@@ -38,11 +38,11 @@ namespace Till.Repositories
 
         public Checkout ApplyOffers(Checkout checkout)
         {
-            foreach (var checkoutOffer in checkout.Offers)
+            foreach (var offer in checkout.Offers)
             {
                 // Want to execute a function here 
                 // does it need to be a delegate or function or what? 
-                //checkoutOffer.Calculation(checkout.CheckoutItems);
+                // checkoutOffer.Calculation(checkout.CheckoutItems);
             }
             return checkout;
         }

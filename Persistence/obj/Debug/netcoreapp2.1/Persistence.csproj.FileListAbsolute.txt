@@ -10,3 +10,15 @@ c:\Sandbox\test\Till\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssem
 c:\Sandbox\test\Till\Persistence\obj\Debug\netcoreapp2.1\Persistence.csproj.CopyComplete
 c:\Sandbox\test\Till\Persistence\obj\Debug\netcoreapp2.1\Persistence.dll
 c:\Sandbox\test\Till\Persistence\obj\Debug\netcoreapp2.1\Persistence.pdb
+C:\Sandbox\test\tilltechtest\Persistence\bin\Debug\netcoreapp2.1\Persistence.deps.json
+C:\Sandbox\test\tilltechtest\Persistence\bin\Debug\netcoreapp2.1\Persistence.dll
+C:\Sandbox\test\tilltechtest\Persistence\bin\Debug\netcoreapp2.1\Persistence.pdb
+C:\Sandbox\test\tilltechtest\Persistence\bin\Debug\netcoreapp2.1\Models.dll
+C:\Sandbox\test\tilltechtest\Persistence\bin\Debug\netcoreapp2.1\Models.pdb
+C:\Sandbox\test\tilltechtest\Persistence\obj\Debug\netcoreapp2.1\Persistence.csprojAssemblyReference.cache
+C:\Sandbox\test\tilltechtest\Persistence\obj\Debug\netcoreapp2.1\Persistence.csproj.CoreCompileInputs.cache
+C:\Sandbox\test\tilltechtest\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfoInputs.cache
+C:\Sandbox\test\tilltechtest\Persistence\obj\Debug\netcoreapp2.1\Persistence.AssemblyInfo.cs
+C:\Sandbox\test\tilltechtest\Persistence\obj\Debug\netcoreapp2.1\Persistence.csproj.CopyComplete
+C:\Sandbox\test\tilltechtest\Persistence\obj\Debug\netcoreapp2.1\Persistence.dll
+C:\Sandbox\test\tilltechtest\Persistence\obj\Debug\netcoreapp2.1\Persistence.pdb

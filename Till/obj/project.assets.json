@@ -772,11 +772,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Sandbox\\test\\Till\\Till\\Till.csproj",
+      "projectUniqueName": "C:\\Sandbox\\test\\tilltechtest\\Till\\Till.csproj",
       "projectName": "Till",
-      "projectPath": "c:\\Sandbox\\test\\Till\\Till\\Till.csproj",
+      "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Till\\Till.csproj",
       "packagesPath": "C:\\Users\\fw5733\\.nuget\\packages\\",
-      "outputPath": "c:\\Sandbox\\test\\Till\\Till\\obj\\",
+      "outputPath": "C:\\Sandbox\\test\\tilltechtest\\Till\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -795,11 +795,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "c:\\Sandbox\\test\\Till\\Models\\Models.csproj": {
-              "projectPath": "c:\\Sandbox\\test\\Till\\Models\\Models.csproj"
+            "C:\\Sandbox\\test\\tilltechtest\\Models\\Models.csproj": {
+              "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Models\\Models.csproj"
             },
-            "c:\\Sandbox\\test\\Till\\Persistence\\Persistence.csproj": {
-              "projectPath": "c:\\Sandbox\\test\\Till\\Persistence\\Persistence.csproj"
+            "C:\\Sandbox\\test\\tilltechtest\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Persistence\\Persistence.csproj"
             }
           }
         }

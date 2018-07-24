@@ -24,9 +24,18 @@ namespace Till.Repositories
             checkout.Timestamp = _dateRepository.UtcNow();
             checkout.CheckoutItems = new List<CheckoutItem>();
 
+
+            if (checkoutItems == null)
+                return checkout;
+
             foreach (var checkoutItem in checkoutItems)
             {
-                checkout.CheckoutItems.Add(_database.CheckoutItems.FirstOrDefault(o => o.Name == checkoutItem));
+                var itemFromDB = _database.CheckoutItems.FirstOrDefault(o => o.Name == checkoutItem);
+
+                if(itemFromDB != null)
+                    checkout.CheckoutItems.Add(itemFromDB);
+                else 
+                    checkout.Errors.Add(new KeyValuePair<string, string>("Item not found in DB", checkoutItem));
             }
 
             return checkout;
