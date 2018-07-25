@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "Till": {
+    "PriceCalculator": {
       "commandName": "Project",
       "commandLineArgs": "apples beans bread beans bread beans apples milk hobnobs"
     }

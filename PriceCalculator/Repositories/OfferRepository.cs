@@ -5,7 +5,7 @@ using System.Text;
 using Models;
 using Persistence;
 
-namespace Till.Repositories
+namespace PriceCalculator.Repositories
 {
     public class OfferRepository : IOfferRepository
     {
@@ -21,20 +21,19 @@ namespace Till.Repositories
         public List<Offer> GetOffersToApply(Checkout checkout)
         {
             var checkoutItemsStringList = checkout.CheckoutItems.Select(p => p.Name);
-            return _database.Offers.Where(o => checkout.CheckoutItems.Select(p => p.Name).Contains(o.TriggerCheckoutItem.Name)
-                                               && o.ValidTo >= _dateRepository.UtcNow()
-                                               && o.ValidFrom <= _dateRepository.UtcNow())
-                                    .ToList();
+            return _database.Offers.Where(o =>
+                    checkout.CheckoutItems.Select(p => p.Name).Contains(o.TriggerCheckoutItem.Name)
+                    && o.ValidTo >= _dateRepository.UtcNow()
+                    && o.ValidFrom <= _dateRepository.UtcNow())
+                .ToList();
         }
 
         public string OutputOfferText(Checkout checkout)
         {
             var returnMessage = new StringBuilder();
             foreach (var offer in checkout.Offers.Where(o => o.Applied))
-            {
                 if (offer.Discount > 0)
                     returnMessage.AppendLine(GetOfferSummaryTextWithSubTotal(offer));
-            }
 
             return returnMessage.ToString();
         }
@@ -44,8 +43,9 @@ namespace Till.Repositories
             foreach (var offer in checkout.Offers)
             {
                 offer.Applied = true;
-                offer.Discount = (decimal)offer.Calculation.DynamicInvoke(checkout.CheckoutItems);
+                offer.Discount = (decimal) offer.Calculation.DynamicInvoke(checkout.CheckoutItems);
             }
+
             return checkout;
         }
 

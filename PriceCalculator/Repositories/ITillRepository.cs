@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using Models;
+﻿using Models;
 
-namespace Till.Repositories
+namespace PriceCalculator.Repositories
 {
     public interface ITillRepository
     {

@@ -1,23 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
-using Models;
 using Persistence;
-using Till.Repositories;
-using Till.Services;
+using PriceCalculator.Repositories;
+using PriceCalculator.Services;
 
-namespace Till
+namespace PriceCalculator
 {
-    class Program
+    internal class Program
     {
         private static ITillRepository _tillRepository;
         private static IOfferRepository _offerRepository;
 
         private static IPrintingService _printingService;
-        
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Setup();
 
@@ -43,7 +39,7 @@ namespace Till
             Console.Write("Done");
         }
 
-        #region Supporting Methods 
+        #region Supporting Methods
 
         private static void Setup()
         {

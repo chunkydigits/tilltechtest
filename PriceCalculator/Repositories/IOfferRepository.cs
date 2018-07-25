@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Models;
 
-namespace Till.Repositories
+namespace PriceCalculator.Repositories
 {
     public interface IOfferRepository
     {

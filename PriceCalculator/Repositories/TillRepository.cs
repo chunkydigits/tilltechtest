@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Models;
 using Persistence;
 
-namespace Till.Repositories
+namespace PriceCalculator.Repositories
 {
     public class TillRepository : ITillRepository
     {
@@ -32,9 +31,9 @@ namespace Till.Repositories
             {
                 var itemFromDB = _database.CheckoutItems.FirstOrDefault(o => o.Name == checkoutItem);
 
-                if(itemFromDB != null)
+                if (itemFromDB != null)
                     checkout.CheckoutItems.Add(itemFromDB);
-                else 
+                else
                     checkout.Errors.Add(new KeyValuePair<string, string>("Item not found in DB", checkoutItem));
             }
 

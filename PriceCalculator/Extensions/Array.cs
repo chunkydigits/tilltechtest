@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Till.Extensions
+namespace PriceCalculator.Extensions
 {
     public static class ArrayExtension
     {

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Models;
+﻿using Models;
 
-namespace Till.Services
+namespace PriceCalculator.Services
 {
     public interface IPrintingService
     {

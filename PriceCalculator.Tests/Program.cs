@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Xunit;
+﻿using Xunit;
 
 namespace PriceCalculator.Tests
 {
@@ -15,9 +12,14 @@ namespace PriceCalculator.Tests
         //       include a couple of higher profile error cases that are likely to be encountered and handled. 
 
         [Fact]
-        public void When_i_submit_a_basket__Then_the_totals_are_correct_and_output_is_formatted_correctly() { }
+        public void When_i_submit_a_basket__Then_the_totals_are_correct_and_output_is_formatted_correctly()
+        {
+        }
 
         [Fact]
-        public void When_i_submit_a_basket_with_trigger_items_and_offers__Then_the_totals_are_correct_and_output_is_formatted_correctly_with_details_of_the_offers_applied() { }
+        public void
+            When_i_submit_a_basket_with_trigger_items_and_offers__Then_the_totals_are_correct_and_output_is_formatted_correctly_with_details_of_the_offers_applied()
+        {
+        }
     }
 }
