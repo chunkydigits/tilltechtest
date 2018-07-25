@@ -78,27 +78,6 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/2.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
-        },
-        "compile": {
-          "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {}
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
-        }
-      },
       "Microsoft.Extensions.DependencyModel/1.0.3": {
         "type": "package",
         "dependencies": {
@@ -1759,45 +1738,6 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
-      },
-      "Models/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "compile": {
-          "bin/placeholder/Models.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Models.dll": {}
-        }
-      },
-      "Persistence/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Persistence.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Persistence.dll": {}
-        }
-      },
-      "PriceCalculator/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "2.1.1",
-          "Microsoft.NETCore.App": "2.1.0",
-          "Models": "1.0.0",
-          "Persistence": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/PriceCalculator.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PriceCalculator.dll": {}
-        }
       }
     }
   },
@@ -1902,34 +1842,6 @@
         "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll",
         "microsoft.dotnet.platformabstractions.1.0.3.nupkg.sha512",
         "microsoft.dotnet.platformabstractions.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.DependencyInjection/2.1.1": {
-      "sha512": "2nshYaLTn73Ie+/yTkb7EZIXwQeFIXsYCBy/jSY9bMayYykGNjdWa25frayhuPAGVbZpEgfgp3d4JRVEuVyEqQ==",
-      "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/2.1.1",
-      "files": [
-        ".signature.p7s",
-        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
-        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
-        "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll",
-        "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.2.1.1.nupkg.sha512",
-        "microsoft.extensions.dependencyinjection.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
-      "sha512": "PW1596sF97gpIc1JuUuYvTmeLfeqC5whbWPsWgJhN0fdwz683him3b/HB0dqhFesVssOjnnA0fEz4+S0gUeBqA==",
-      "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.1.1",
-      "files": [
-        ".signature.p7s",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.2.1.1.nupkg.sha512",
-        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.DependencyModel/1.0.3": {
@@ -6018,29 +5930,14 @@
         "xunit.runner.visualstudio.2.3.1.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
-    },
-    "Models/1.0.0": {
-      "type": "project",
-      "path": "../Models/Models.csproj",
-      "msbuildProject": "../Models/Models.csproj"
-    },
-    "Persistence/1.0.0": {
-      "type": "project",
-      "path": "../Persistence/Persistence.csproj",
-      "msbuildProject": "../Persistence/Persistence.csproj"
-    },
-    "PriceCalculator/1.0.0": {
-      "type": "project",
-      "path": "../Till/PriceCalculator.csproj",
-      "msbuildProject": "../Till/PriceCalculator.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "C:\\Sandbox\\test\\tilltechtest\\Till\\PriceCalculator.csproj",
       "Microsoft.NET.Test.Sdk >= 15.7.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "Moq >= 4.9.0",
-      "PriceCalculator >= 1.0.0",
       "xunit >= 2.3.1",
       "xunit.runner.visualstudio >= 2.3.1"
     ]
@@ -6052,11 +5949,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Sandbox\\test\\tilltechtest\\Till.Tests\\PriceCalculator.Tests.csproj",
+      "projectUniqueName": "C:\\Sandbox\\test\\tilltechtest\\PriceCalculator.Tests\\PriceCalculator.Tests.csproj",
       "projectName": "PriceCalculator.Tests",
-      "projectPath": "C:\\Sandbox\\test\\tilltechtest\\Till.Tests\\PriceCalculator.Tests.csproj",
+      "projectPath": "C:\\Sandbox\\test\\tilltechtest\\PriceCalculator.Tests\\PriceCalculator.Tests.csproj",
       "packagesPath": "C:\\Users\\Andy Brown\\.nuget\\packages\\",
-      "outputPath": "C:\\Sandbox\\test\\tilltechtest\\Till.Tests\\obj\\",
+      "outputPath": "C:\\Sandbox\\test\\tilltechtest\\PriceCalculator.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6119,5 +6016,16 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Sandbox\\test\\tilltechtest\\Till\\PriceCalculator.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Sandbox\\test\\tilltechtest\\Till\\PriceCalculator.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }
